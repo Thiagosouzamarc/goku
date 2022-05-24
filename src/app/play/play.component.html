@@ -1,0 +1,29 @@
+<div class="body-fase">
+    <div *ngIf="!isGameOver" class="background">
+        <button (click)='sound()' id='soundToggle'><i class="fas fa-volume-off button-sound"></i></button>
+        <div class="block-score">
+            <div class="score-play">
+                <h3>SCORE: <span id='score'>{{score}}</span></h3>
+            </div>
+            <div class="high-score-play">
+                <h3>RECORD: <span id='record'>{{record}}</span></h3>
+            </div>
+        </div>
+        <div class="floor">
+            <div>
+                <img class="goku" src="../assets/goku.gif">
+            </div>
+        </div>
+    </div>
+    <div *ngIf="isGameOver" class='game-over'>
+        <h1>GAME OVER</h1>
+        <h3>SCORE: <span>{{this.actualScore}}</span></h3>
+        <div class="buttons">
+            <button class="btn btn-primary button-home" (click)="start()">INÍCIO</button>
+            <button class="btn btn-success play" (click)="restart()">JOGAR</button>
+        </div>
+    </div>
+</div>
+
+<!-- Audios -->
+<audio src="./assets/intro.mp3" id='intro' type='audio/mp3'></audio>

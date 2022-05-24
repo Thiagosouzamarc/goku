@@ -1,0 +1,49 @@
+body {
+    background-color: red;
+  }
+  
+  .home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+  }
+  
+  img {
+    width: 40%;
+  }
+  
+  .button-play {
+    margin-top: 10px;
+    align-items: center;
+    background-color: #00ff00 !important;
+    font-weight: 700 !important;
+    width: 120px;
+    color: rgb(0, 70, 0) !important;
+    --bs-btn-border-color: none !important;
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(74, 255, 74, 0.5) !important;
+  }
+  
+  h5 {
+    color: #fff;
+    margin-top: 10px;
+  }
+  
+  h5 > span {
+    font-size: 1.2rem;
+    color: #ffff00;
+  }
+  
+  /*  SCREEN PLAY SOUND  */
+  #soundToggle {
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border:none;
+    background-color: transparent;
+    align-self: flex-end;
+    margin-right: 5%;
+  }
